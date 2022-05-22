@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+/* @import url(https://fonts.google.com/icons?icon.query=done+); */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+  box-sizing:  border-box;  
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    border: 2px red;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-task{
+    height: 10vh;
+    width: 100vw;
+    background-color: #feefc3;
+    border: 2px red;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+    transition: 300ms;
+    outline: none;
+}
+
+.add-task form input{
+    margin: 2px;
+    border-radius: 5px;
+    padding:  5px;
+    box-shadow: 2px 2px 3px 1px lightgrey;
+
+}
+
+.add-task form input[type=button]{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 1px lightgrey;
+
+}
+
+.add-task form input[type=button]:hover{
+    /* transition: 200ms; */
+    background-color: #feefc3;
+    transform: scale(1.01);
+}
+
+.task-lists{
+    height: 90vh;
+    width: 100vw;
+    border: 2px red;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.task-lists .todo{
+    height: 100%;
+    width: 50%;
+    /* margin: 20px; */
+    padding-left: 20 px;
+    padding-top: 10px;
+    background-color: aliceblue;
+    
+    justify-content: center;
+    border-right: 2px solid antiquewhite;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.task-lists .todo ul{
+    padding-top: 20px;
+}
+
+.task-lists .finished{
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    padding-top: 10px;
+    background-color: aliceblue;
+    justify-content: center;
+    border: 2px;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.task-lists .finished ul{
+    padding-top: 20px;
+}
